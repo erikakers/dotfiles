@@ -1,3 +1,4 @@
+cask_args appdir: "/Applications"
 tap 'caskroom/cask'
 
 cask 'java'
@@ -8,7 +9,11 @@ brew 'mvn'
 brew 'wget'
 brew 'curl'
 
+cask 'iterm2'
+cask 'vs-code'
+cask 'atom'
 cask '1password'
 cask 'alfred'
 cask 'google-chrome' 
+cask 'firefox'
 cask 'slack'
