@@ -10,6 +10,7 @@ brew 'wget'
 brew 'curl'
 
 cask 'iterm2'
+cask 'kaleidoscope'
 cask 'vs-code'
 cask 'atom'
 cask '1password'
