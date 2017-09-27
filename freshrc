@@ -2,11 +2,14 @@ fresh freshshell/fresh bin/fresh --bin
 
 fresh config/\* --file
 
+# construct ~/.bash_prompt
 fresh-options --file=~/.bash_prompt
 	# bash-it theme: doubletime with custom extension
 	# load colors, base prompt setup
-	fresh Bash-it/bash-it themes/colors.theme.bash
-	fresh Bash-it/bash-it themes/base.theme.bash
+	fresh revans/bash-it themes/colors.theme.bash
+	fresh revans/bash-it themes/base.theme.bash
 	# Original
-	fresh Bash-it/bash-it themes/doubletime/doubletime.theme.bash
+	fresh revans/bash-it themes/doubletime/doubletime.theme.bash
+	# Customizations based on Bash-It theme
+	fresh simshanith/dotfiles bash/doubletime.setup.bash
 fresh-options
