@@ -2,6 +2,7 @@ DIR="${HOME}/dotfiles"
 
 setup:
 	ln -sv ~/.dotfiles/.freshrc ~
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
 
 brew:
 	brew tap Homebrew/bundle
