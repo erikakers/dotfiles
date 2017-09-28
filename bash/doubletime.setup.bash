@@ -49,8 +49,3 @@ $(sim_scm_prompt)${bold_white}${background_orange} $ ${normal} "
   PS2='> '
   PS4='+ '
 }
-
-export history_command='history -a;'
-history_command='history -a; echo "$$ $USER $(history 1)" >> ~/.bash_eternal_history'
-
-PROMPT_COMMAND="prompt_setter; $history_command"
