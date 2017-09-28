@@ -1,6 +1,7 @@
 DIR="${HOME}/dotfiles"
 
 setup:
+	ln -sv ~/.dotfiles/.freshrc ~
 
 brew:
 	brew tap Homebrew/bundle
