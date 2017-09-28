@@ -19,7 +19,6 @@ svn_prompt_status() {
   echo 
 }
 
-
 # override bash-it echo -e with unescaped version
 function scm_char {
   scm_prompt_char
