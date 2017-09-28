@@ -1,0 +1,11 @@
+fresh freshshell/fresh bin/fresh --bin
+
+fresh config/\* --file
+
+# construct ~/.bash_prompt --marker
+fresh-options --file=~/.bash_prompt --marker
+	fresh bash/theme/colors.theme.bash
+	fresh bash/theme/base.theme.bash
+	fresh Bash-it/bash-it themes/doubletime/doubletime.theme.bash
+	fresh bash/theme/doubletime.setup.bash
+fresh-options
