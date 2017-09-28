@@ -19,6 +19,7 @@ svn_prompt_status() {
   echo 
 }
 
+
 # override bash-it echo -e with unescaped version
 function scm_char {
   scm_prompt_char
@@ -45,7 +46,12 @@ function prompt_setter() {
   fi
   PS1="\n${bold_white}${background_blue} ${clock} ${normal} $(scm_char) [$THEME_PROMPT_HOST_COLOR\u@${THEME_PROMPT_HOST}$normal]
 $ssh_prompt${black}${background_white} \w ${normal}
-$(sim_scm_prompt)${bold_white}${background_orange} $ ${normal} "
+$(sim_scm_prompt)${bold_white}${background_orange} λ ${normal} "
   PS2='> '
   PS4='+ '
 }
+
+export history_command='history -a;'
+history_command='history -a; echo "$$ $USER $(history 1)" >> ~/.bash_eternal_history'
+
+PROMPT_COMMAND="prompt_setter; $history_command"
